@@ -1,7 +1,9 @@
-FROM microsoft/dotnet
-
-ADD . /netcore/app
+FROM microsoft/aspnetcore
 
 WORKDIR /netcore/app/src/SampleWebApiAspNetCore
 
-CMD dotnet restore && dotnet build && dotnet run
+CMD dotnet restore && dotnet build
+
+ADD . /netcore/app
+
+ENTRYPOINT dotnet run
