@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore
+FROM microsoft/aspnetcore-build
 
 WORKDIR /netcore/app/src/SampleWebApiAspNetCore
 
