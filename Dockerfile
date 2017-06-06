@@ -2,6 +2,6 @@ FROM microsoft/aspnetcore-build
 
 WORKDIR /netcore/app/src/SampleWebApiAspNetCore
 
-ADD . /netcore/app
+ADD . .
 
-ENTRYPOINT ["dotnet", "/bin/Debug/netcoreapp1.1/SampleWebApiAspNetCore.dll"]
+ENTRYPOINT ["dotnet", "run"]
